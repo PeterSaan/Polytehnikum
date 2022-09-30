@@ -1,2 +1,2 @@
 # Polytehnikum
-Polütehnikumi ülesanded/kodutööd
+Polütehnikumi ülesanded/kodutööd/spikrid
