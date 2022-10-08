@@ -38,7 +38,7 @@ function toode(a) {
 }
 
 function tooteHind(a) { 
-    return Math.round(tellimus.rows[a].price * tellimus.rows[a].amount * 1.2)
+    return (tellimus.rows[a].price * tellimus.rows[a].amount * 1.2)
 }
 
 function koguHind(a, b, c) { 
@@ -47,9 +47,9 @@ function koguHind(a, b, c) {
 
 for (i = 0; i <= 2; i++) { 
    console.log(toode(i))
-   console.log(tooteHind(i) + "€")
+   console.log(tooteHind(i).toFixed(2) + "€")
    
    if (i >= 2) { 
-     console.log("Kokku: " + koguHind(0, 1, 2) + "€")
+     console.log("Kokku: " + koguHind(0, 1, 2).toFixed(2) + "€")
    }
 }
