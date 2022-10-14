@@ -34,7 +34,7 @@ var tellimus = {
 }
 
 function toode(a) { 
-    return tellimus.rows[a].name + " Kogus: " + tellimus.rows[a].amount
+    return tellimus.rows[a].name + " Kogus: " + tellimus.rows[a].amount + "tk Ühe toote hind: " + (tellimus.rows[a].price * 1.2).toFixed(2) + "€"
 }
 
 function tooteHind(a) { 
