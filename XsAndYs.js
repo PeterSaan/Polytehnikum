@@ -1,30 +1,12 @@
-const letters = ["xxxyyy", "xyxyxyx" , "xxyyxxyxy", "", "x"]
-let lettersInWord = 0
-
-function countXsAndYs(word) { 
-    const letter = letters.forEach(
-        function(){ 
-            if(word !== "") {
-                for(i = 0; i < letters.length; i++) { 
-                    
-                }
-            } else { 
-                return "No letters to count!"
-              }    
+function charCount(string, letter) {
+    let amount = 0
+    
+    for(position = 0; position < string.length; position++) {
+        if(string.charAt(position) == letter) {
+            amount++
         }
-    )
-
+    }
+    return amount
 }
 
-/*function char_count(str, letter) 
-{
- var letter_Count = 0;
- for (var position = 0; position < str.length; position++) 
- {
-    if (str.charAt(position) == letter) 
-      {
-      letter_Count += 1;
-      }
-  }
-  return letter_Count;
-}*/
+console.log(charCount("abbccc", "a"))
